@@ -35,13 +35,13 @@ const NavigationBar = () => {
     <>
       <Nav className="mr-auto">
         <Link to={"add"} className="nav-link">
-          Add Book
+          Add offer
         </Link>
         <Link to={"list"} className="nav-link">
-          Book List
+          Book offer
         </Link>
         <Link to={"users"} className="nav-link">
-          User List
+          offer list
         </Link>
       </Nav>
       <Nav className="navbar-right">
@@ -56,16 +56,15 @@ const NavigationBar = () => {
     <Navbar bg="dark" variant="dark">
       <Link to={auth.isLoggedIn ? "home" : ""} className="navbar-brand">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Book_icon_1.png"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Electric_car_icon.png/640px-Electric_car_icon.png"
           width="25"
           height="25"
           alt="brand"
         />{" "}
-        Book Store
+        Covoiturage Maroc
       </Link>
       {auth.isLoggedIn ? userLinks : guestLinks}
     </Navbar>
   );
 };
-
 export default NavigationBar;
